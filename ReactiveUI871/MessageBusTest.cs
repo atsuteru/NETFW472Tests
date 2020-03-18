@@ -33,6 +33,9 @@ namespace ReactiveUI871
 
                 var messageBus = new MessageBus();
                 //messageBus.RegisterScheduler<int>(CurrentThreadScheduler.Instance);
+                messageBus.RegisterScheduler<int>(new DummyScheduler());
+
+
                 messageBus.Listen<int>().Subscribe(i =>
                 {
                     disoacher.Invoke(() => 
