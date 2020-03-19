@@ -76,7 +76,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DummyScheduler.cs" />
     <Compile Include="MessageBusTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
